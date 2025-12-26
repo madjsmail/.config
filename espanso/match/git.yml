@@ -1,0 +1,99 @@
+
+matches:
+  - trigger: ":git"
+    replace: ""
+    propagate_keys: true
+    word: true
+    # List of common Git commands as sub-matches
+    # Use ::g<command> for quick access
+    
+    # ::ga -> git add .
+    # ::gac -> git add . && git commit -m "{{_}}"
+    # ::gp -> git push
+    # ::gpull -> git pull
+    # ::gc -> git checkout 
+    # ::gs -> git status
+
+  - trigger: ":gac"
+    replace: 'git add . && git commit -m "{{_}}"'
+
+  - trigger: ":gp"
+    replace: "git push"
+
+  - trigger: ":gc"
+    replace: "git checkout "
+    
+  - trigger: ":gpull"
+    replace: "git pull"
+
+  - trigger: ":ga"
+    replace: "git add ."
+
+  - trigger: ":gs"
+    replace: "git status"
+
+
+
+  # Push current branch
+  - trigger: ":gp"
+    replace: "git push"
+
+  # Pull latest changes
+  - trigger: ":gpl"
+    replace: "git pull"
+
+  # Checkout (branch or file)
+  - trigger: ":gco"
+    replace: "git checkout {{_}}"
+
+  # Switch to main branch (or main/trunk as per your convention)
+  - trigger: ":gm"
+    replace: "git checkout main"
+
+  # Switch to develop branch
+  - trigger: ":gd"
+    replace: "git checkout develop"
+
+  # Create and switch to a new branch
+  - trigger: ":gb"
+    replace: "git checkout -b {{_}}"
+
+  # Status overview
+  - trigger: ":gs"
+    replace: "git status"
+
+  # Show log (one-line format)
+  - trigger: ":gl"
+    replace: "git log --oneline -10"
+
+  # Amend last commit (keeps same message)
+  - trigger: ":gam"
+    replace: "git commit --amend --no-edit"
+
+  # Add only staged files (safe add)
+  - trigger: ":ga"
+    replace: "git add {{_}}"
+
+  # Diff staged changes
+  - trigger: ":gdif"
+    replace: "git diff --cached"
+
+  # Reset to last commit (soft)
+  - trigger: ":grs"
+    replace: "git reset --soft HEAD~1"
+
+  # Reset working tree (hard)
+  - trigger: ":grh"
+    replace: "git reset --hard"
+
+  # Stash changes
+  - trigger: ":gst"
+    replace: "git stash"
+
+  # Apply last stash
+  - trigger: ":gsta"
+    replace: "git stash apply"
+
+  # Show current branch
+  - trigger: ":gbr"
+    replace: "git branch"

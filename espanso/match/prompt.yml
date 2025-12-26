@@ -1,0 +1,45 @@
+matches:
+
+  - trigger: ":translate-component"
+    replace: 'Translate the component content while preserving its structure and formatting. Ensure the translated text is grammatically correct and culturally appropriate for the target language. give me the uipdated  component, then generate the file ar.json fr.json and en.json, no yapping only code '
+
+  - trigger: ":clean"
+    replace: 'Design a modular and reusable codebase,  that demonstrates the use  Higher-Order Functions, Closures, and the DRY Principle., Analyze the provided code and identify violations of the SOLID principles (Single Responsibility, Open/Closed, Liskov Substitution, Interface Segregation, Dependency Inversion). Refactor the code to adhere to these principles and explain your reasoning.'
+
+  - trigger: ":clean-code"
+    replace: 'Write a clean, maintainable, and well-structured version of the following code. Ensure it adheres to SOLID principles, avoids code smells, and includes meaningful variable names, comments, and consistent formatting.'
+
+  - trigger: ":refactor"
+    replace: 'Refactor this code to improve readability, reduce complexity, and eliminate duplication. Focus on breaking down large functions, removing nested conditionals, and using design patterns where applicable. Explain the changes you made and why they improve the code.'
+
+  - trigger: ":solid"
+    replace: 'Analyze the provided code and identify violations of the SOLID principles (Single Responsibility, Open/Closed, Liskov Substitution, Interface Segregation, Dependency Inversion). Refactor the code to adhere to these principles and explain your reasoning.'
+
+  - trigger: ":readable"
+    replace: 'Rewrite this code to make it more readable and self-documenting. Use clear variable and function names, consistent indentation, and logical spacing. Avoid overly complex expressions and add comments only where necessary to clarify intent.'
+
+  - trigger: ":testable"
+    replace: 'Restructure this code to make it more testable. Focus on dependency injection, mocking external services, and isolating business logic from side effects. Provide examples of unit tests that could be written for the refactored code.'
+
+  - trigger: ":small-functions"
+    replace: 'Break down this large function into smaller, single-purpose functions. Each function should do one thing and do it well. Ensure the new functions are reusable, have clear names, and follow the DRY principle.'
+
+  - trigger: ":avoid-comments"
+    replace: 'Rewrite this code to minimize the need for comments by using self-explanatory variable names, well-named functions, and clear logic. Ensure the code is intuitive and communicates its purpose without relying on comments.'
+
+  - trigger: ":consistent-style"
+    replace: 'Standardize the style of this code to follow best practices (e.g., PEP 8 for Python, ESLint for JavaScript). Ensure consistent indentation, naming conventions, and formatting. Use a linter or formatter to automate this process.'
+
+  - trigger: ":error-handling"
+    replace: 'Improve the error handling in this code by using exceptions, custom error types, or result objects. Ensure errors are caught gracefully, logged appropriately, and provide meaningful feedback to users or developers.'
+
+  - trigger: ":remove-duplication"
+    replace: 'Identify and eliminate duplicated code in this project. Extract common logic into reusable functions, classes, or modules. Explain how this reduces maintenance effort and improves consistency.'
+
+  - trigger: ":meaningful-names"
+    replace: 'Replace vague or generic variable and function names in this code with meaningful, intent-revealing names. Ensure names reflect the purpose, type, or behavior of the entity they represent.'
+
+  - trigger: ":clean-architecture"
+    replace: 'Design a clean architecture for this application, separating concerns into layers (e.g., presentation, business logic, data access). Use dependency rules to ensure lower-level modules do not depend on higher-level ones, and explain how this improves maintainability.'
+
+
